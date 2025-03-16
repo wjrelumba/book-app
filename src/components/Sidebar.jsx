@@ -26,7 +26,7 @@ export default function Sidebar({shown,toggleSideBar}) {
             <LogOutBtn btnClass={'w-full flex justify-start text-white mt-5 border-b'}/>
         </div>
         <div className='fixed bottom-0 mb-2'>
-            <h1 className='font-thin text-xs text-white'>&copy; Elumba, BookKeep 2024</h1>
+            <h1 className='font-thin text-xs text-white'>&copy; ACEM, BookApp 2025</h1>
         </div>
     </div>
   )
