@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideLeftOut {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+
+.slide-left-out {
+  animation: slideLeftOut 0.2s ease-out forwards;
+}
+
+@keyframes slideRightIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.slide-right {
+  animation: slideRightIn 0.2s ease-out forwards;
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+.slide-up-fade-in {
+animation: slideUpFadeIn 0.5s ease-out forwards;
+}
+
+@keyframes scaleUp {
+    0% {
+      transform: scale(0);
+      transform-origin: top left;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: top left;
+    }
+  }
+  
+  .scale-up {
+    animation: scaleUp 0.2s ease-out forwards;
+  }
+  
+body {
+  background: linear-gradient(to bottom right, #166534, #1e40af);
+  margin: 0; /* Remove default margin to ensure full coverage */
+  height: 100vh; /* Ensure the body takes the full viewport height */
+  width: 100%;
+}
